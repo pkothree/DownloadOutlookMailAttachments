@@ -19,7 +19,7 @@ $folders = $namespace.getDefaultFolder($olDefaultFolders::olFolderInBox)
 # tests to see im connections work
 $namespace.CurrentUser # get the current user
 $folders.items # shows all mails
-$folders.folder # shows folders
+$folders.folders # shows folders
  
 # define filepath to save files 
 $localpath = "F:\temp\"

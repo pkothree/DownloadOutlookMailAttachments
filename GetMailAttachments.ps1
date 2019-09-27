@@ -18,7 +18,7 @@ $folders = $namespace.getDefaultFolder($olDefaultFolders::olFolderInBox)
 
 # tests to see im connections work
 $namespace.CurrentUser # get the current user
-$folders.item # shows all mails
+$folders.items # shows all mails
 $folders.folder # shows folders
  
 # define filepath to save files 
@@ -29,7 +29,7 @@ $i = 0
 # select the folder where your files are
 $f = $namespace.PickFolder()
 # iterate through every mail in the folder and save the attachements
-$f.Items | foreach{
+$f.items | foreach{
     $_.attachments|foreach{
         $i++
         Write-host $i
